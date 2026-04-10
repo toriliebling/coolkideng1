@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CoolK1d - Одежда</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="clothing_style.css">
+
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+
+    <header class="header-kids">
+
+        <div class="container header-content">
+
+            <!-- Логотип -->
+
+            <div class="logo-kids">
+
+                <h1>CoolK1d</h1>
+
+                <p>Be the top!</p>
+
+            </div>
+
+            <!-- Навигационное меню -->
+
+            <nav class="nav-kids">
+
+                <ul>
+
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+
+                    <li><a href="index.html#sections" class="nav-link">Разделы</a></li>
+
+                    <li><a href="#" class="nav-link">Тренировочные задания</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Основной контент -->
+
+    <main class="clothing-section">
+
+        <div class="container">
+
+            <h1 class="clothing-title">Одежда</h1>
+
+            <p class="clothing-subtitle">Слова, связанные с одеждой и аксессуарами. Нажмите на кнопку 🔊 чтобы услышать произношение.</p>
+
+            
+
+            <!-- Сетка слов -->
+
+            <div class="clothing-grid">
+
+                <div class="word-card" data-word="shirt">
+
+                    <h3 class="word-english">Shirt</h3>
+
+                    <p class="word-translation">Рубашка</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('shirt')">🔊 Произношение</button>
+
+                </div>
+
+                <div class="word-card" data-word="pants">
+
+                    <h3 class="word-english">Pants</h3>
+
+                    <p class="word-translation">Брюки</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('pants')">🔊 Произношение</button>
+
+
+                </div>
+
+                <div class="word-card" data-word="dress">
+
+                    <h3 class="word-english">Dress</h3>
+
+                    <p class="word-translation">Платье</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('dress')">🔊 Произношение</button>
+
+
+                </div>
+
+                <div class="word-card" data-word="skirt">
+
+                    <h3 class="word-english">Skirt</h3>
+
+                    <p class="word-translation">Юбка</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('skirt')">🔊 Произношение</button>
+
+
+                </div>
+
+                <div class="word-card" data-word="jacket">
+
+                    <h3 class="word-english">Jacket</h3>
+
+                    <p class="word-translation">Куртка</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('jacket')">🔊 Произношение</button>
+
+
+                </div>
+
+                <div class="word-card" data-word="coat">
+
+                    <h3 class="word-english">Coat</h3>
+
+                    <p class="word-translation">Пальто</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('coat')">🔊 Произношение</button>
+
+
+                </div>
+
+                <div class="word-card" data-word="hat">
+
+                    <h3 class="word-english">Hat</h3>
+
+                    <p class="word-translation">Шляпа</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('hat')">🔊 Произношение</button>
+
+
+                </div>
+
+                <div class="word-card" data-word="shoes">
+
+                    <h3 class="word-english">Shoes</h3>
+
+                    <p class="word-translation">Обувь</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('shoes')">🔊 Произношение</button>
+
+
+                </div>
+
+                <div class="word-card" data-word="socks">
+
+                    <h3 class="word-english">Socks</h3>
+
+                    <p class="word-translation">Носки</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('socks')">🔊 Произношение</button>
+
+
+                </div>
+
+                <div class="word-card" data-word="gloves">
+
+                    <h3 class="word-english">Gloves</h3>
+
+                    <p class="word-translation">Перчатки</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('gloves')">🔊 Произношение</button>
+
+
+                </div>
+
+                <div class="word-card" data-word="scarf">
+
+                    <h3 class="word-english">Scarf</h3>
+
+                    <p class="word-translation">Шарф</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('scarf')">🔊 Произношение</button>
+
+
+                </div>
+
+                <div class="word-card" data-word="t-shirt">
+
+                    <h3 class="word-english">T-shirt</h3>
+
+                    <p class="word-translation">Футболка</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('t-shirt')">🔊 Произношение</button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="instructions">
+
+                <p>1. Нажмите на кнопку 🔊 под словом, чтобы услышать произношение на английском</p>
+
+                <p>2. Повторите слово вслух, стараясь имитировать произношение</p>
+
+                <p>3. Запомните написание слова и его перевод</p>
+
+                <p>4. Попробуйте выполнить задания ниже для закрепления</p>
+
+            </div>
+
+
+
+            <!-- Задания -->
+
+            <div class="exercises-section">
+
+                <h2 class="exercises-title">Тренировочные задания</h2>
+
+                <p class="exercises-subtitle">Проверьте свои знания с помощью интерактивных заданий.</p>
+
+                
+
+                <div class="exercises-grid">
+
+                    <div class="exercise-card">
+
+                        <h3>Сопоставление</h3>
+
+                        <p>Сопоставьте слово на английском с его переводом.</p>
+
+                        <a href="clothing_matching_game.html" class="exercise-btn">Начать игру</a>
+
+                    </div>
+
+                    <div class="exercise-card">
+
+                        <h3>Аудирование</h3>
+
+                        <p>Прослушайте слово и выберите правильный перевод.</p>
+
+                        <a href="clothing_listening_game.html" class="exercise-btn">Начать игру</a>
+
+                    </div>
+
+                    <div class="exercise-card">
+
+                        <h3>Запоминание</h3>
+
+                        <p>Проверьте, насколько хорошо вы запомнили слова.</p>
+
+                        <a href="clothing_memorization_game.html" class="exercise-btn">Начать игру</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Р СџР С•Р С—Р В°Р С— РЎРѓ Р Т‘Р С•Р С—Р С•Р В»Р Р…Р С‘РЎвЂљР ВµР В»РЎРЉР Р…Р С•Р в„– Р С‘Р Р…РЎвЂћР С•РЎР‚Р СР В°РЎвЂ Р С‘Р ВµР в„– -->
+
+            <div id="word-popup" class="word-popup">
+
+                <div class="popup-content">
+
+                    <button class="popup-close" onclick="closeWordPopup()">×</button>
+
+                    <h3 class="popup-title">Слово <span id="popup-word">Shirt</span></h3>
+
+                    <div class="popup-body">
+
+                        <div class="word-image-large">
+
+                            <img id="popup-image" src="images/eee.png" alt="Word">
+
+                        </div>
+
+                        <div class="word-info">
+
+                            <h4 id="popup-word-english">Shirt</h4>
+
+                            <p id="popup-translation">Рубашка</p>
+
+                            <p id="popup-fact">Предмет одежды для верхней части тела.</p>
+
+                            <p><strong>Примеры использования:</strong></p>
+
+                            <ul id="popup-examples">
+
+                                <li>I wear a white shirt to school.</li>
+
+                                <li>This shirt is made of cotton.</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+    </main>
+
+
+
+    <!-- Футер сайта -->
+
+    <footer class="footer-kids">
+
+        <div class="container footer-content">
+
+            <div class="footer-info">
+
+                <h3>Контакты автора</h3>
+
+                <p>Если у вас есть вопросы или предложения, свяжитесь со мной:</p>
+
+            </div>
+
+            <div class="footer-buttons">
+
+                <button class="footer-btn" onclick="window.location.href='https://vk.com/panpantori'">VK</button>
+
+                <button class="footer-btn" onclick="window.location.href='mailto:vikamamonova11037@gmail.com'">Email</button>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Кнопка "Наверх" -->
+
+    <a href="#" class="scroll-to-top">
+
+        <img src="images/arrow.png" alt="Наверх">
+
+    </a>
+
+
+
+    <script src="clothing.js"></script>
+
+    <script src="scroll-to-top.js"></script> <script src="email-popup.js"></script></body>
+
+</html>
+
+
+

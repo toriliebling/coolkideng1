@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #e0f7fa 0%, #291ec5 50%, #e3f2fd 100%);
+    background-attachment: fixed;
+    font-family: "Jost", sans-serif;
+    min-height: 100vh;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Jost", sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+p, button, input, textarea, select {
+    font-family: "Jost", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Стили для шапки */
+.header-kids {
+    background: linear-gradient(135deg, #ff9a9e 0%, #811818 100%);
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.header-kids::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(255, 18, 18, 0.3) 0%, rgba(255,255,255,0) 70%);
+    border-radius: 50%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+/* Логотип */
+.logo-kids h1 {
+    color: #8a0b0b;
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    text-shadow: 2px 2px 0 #c72116;
+    margin-bottom: 5px;
+    -webkit-text-stroke:0;
+}
+
+.logo-kids p {
+    color: #000000;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Навигация */
+.nav-kids ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-link {
+    display: block;
+    padding: 12px 20px;
+    background: #ffd166;
+    color: #000000;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 0 #96824b;
+    border: 2px solid #000000;
+}
+
+.nav-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 0 #ffb700;
+    background: #ffdc73;
+}
+
+.nav-link.active {
+    background: #b92b00;
+    box-shadow: 0 4px 0 #770101;
+    color: white;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-kids ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .logo-kids {
+        text-align: center;
+    }
+}
+
+/* Стили для футера */
+.footer-kids {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding: 30px 0;
+    margin-top: 40px;
+    border-top: 3px solid #ffd166;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-info h3 {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-btn {
+    padding: 10px 20px;
+    background: #ffd166;
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 0 #ffb700;
+    border: 2px solid #1a535c;
+}
+
+.footer-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 0 #ffb700;
+    background: #ffdc73;
+}
+
+/* Адаптивность для футера */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-buttons {
+        justify-content: center;
+    }
+}
+
+/* Кнопка "Наверх" */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff9a9e 0%, #811818 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 3px solid #ffd166;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.scroll-to-top.footer-visible {
+    bottom: 120px; /* Поднимаем кнопку выше, когда футер виден */
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    opacity: 1;
+}
+
+.scroll-to-top img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Адаптивность для кнопки */
+@media (max-width: 768px) {
+    .scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .scroll-to-top.footer-visible {
+        bottom: 100px; /* Меньшее смещение на мобильных */
+    }
+    .scroll-to-top img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Стили для главного меню */
+.main-content {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+}
+
+.section-title {
+    text-align: center;
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 0 #ffd166;
+}
+
+.sections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.section-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 3px solid #ffd166;
+    text-align: center;
+}
+
+.section-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.section-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 3px solid #ffd166;
+}
+
+.section-card h3 {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 15px 20px 10px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-card p {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    padding: 0 20px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-btn {
+    margin: 20px;
+    padding: 12px 30px;
+    background: #06d6a0;
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 0 #05b38a;
+    border: 2px solid #1a535c;
+}
+
+.section-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 0 #05b38a;
+    background: #09f7bb;
+}
+
+/* Адаптивность для главного меню */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .sections-grid {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+}
+
+/* Стили для hero-секции */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-radius: 20px;
+    margin: 30px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ffd166;
+}
+
+.hero--info {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.hero--info h2 {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0 #ffd166;
+}
+
+.hero--info h1 {
+    color: #ff6b6b;
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 #1a535c;
+    -webkit-text-stroke: 0;
+}
+
+.hero--info p {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero img {
+    flex: 1;
+    max-width: 50%;
+    border-radius: 20px;
+    border: 3px solid #1a535c;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Адаптивность для hero-секции */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    
+    .hero--info {
+        padding-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .hero img {
+        max-width: 100%;
+    }
+}
+

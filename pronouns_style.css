@@ -1,0 +1,522 @@
+/* Дополнительные стили для страницы pronouns.html */
+
+.pronouns-section {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+    position: relative;
+}
+
+.pronouns-title {
+    text-align: center;
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 #ffd166;
+    -webkit-text-stroke: 0;
+}
+
+.pronouns-subtitle {
+    text-align: center;
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Карточки */
+.intro-card,
+.table-card,
+.verb-card,
+.interactive-card,
+.exercises-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ffd166;
+    transition: all 0.3s ease;
+}
+
+.intro-card:hover,
+.table-card:hover,
+.verb-card:hover,
+.interactive-card:hover,
+.exercises-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.intro-card h2,
+.table-card h2,
+.verb-card h2,
+.interactive-card h2,
+.exercises-card h2 {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0 #ffd166;
+}
+
+.intro-card p,
+.table-card p,
+.verb-card p,
+.interactive-card p,
+.exercises-card p {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.intro-img,
+.verb-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    border: 3px solid #1a535c;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Таблица */
+.table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.pronouns-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: "Jost", sans-serif;
+}
+
+.pronouns-table thead {
+    background: #06d6a0;
+    color: white;
+}
+
+.pronouns-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 3px solid #05b38a;
+}
+
+.pronouns-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 17px;
+    color: #1a535c;
+}
+
+.pronouns-table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.pronouns-table tbody tr:hover {
+    background: #e6f7ff;
+}
+
+.sound-btn {
+    padding: 8px 15px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.2s;
+    box-shadow: 0 4px 0 #d32f2f;
+}
+
+.sound-btn:hover {
+    background: #ff8e8e;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 0 #d32f2f;
+}
+
+.sound-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 0 #d32f2f;
+}
+
+.table-note {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Пояснение о глаголах */
+.verb-explanation {
+    background: linear-gradient(135deg, #fff9e6 0%, #ffe6e6 100%);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ffd166;
+    margin: 25px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.verb-explanation p {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Использование глагола to be */
+.verb-usage {
+    background: linear-gradient(135deg, #e6f7ff 0%, #d1f2ff 100%);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #1a535c;
+    margin: 30px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.verb-usage h3 {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 0 #ffd166;
+}
+
+.verb-usage p {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.verb-usage ul {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.verb-usage li {
+    margin-bottom: 15px;
+}
+
+.verb-usage li strong {
+    color: #ff6b6b;
+}
+
+.verb-note {
+    background: #ffd166;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #1a535c;
+    margin-top: 20px;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #1a535c;
+    line-height: 1.5;
+}
+
+.verb-note strong {
+    color: #d32f2f;
+}
+
+/* Формы глагола */
+.verb-forms {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.verb-form {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #1a535c;
+    text-align: center;
+}
+
+.verb-form h3 {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.verb-highlight {
+    color: #ff6b6b;
+    text-shadow: 1px 1px 0 #1a535c;
+}
+
+.verb-form p {
+    color: #1a535c;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Интерактивные задания */
+.matching-game {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.drag-container,
+.drop-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    flex: 1;
+    min-width: 300px;
+}
+
+.drag-item {
+    padding: 12px 18px;
+    background: #06d6a0;
+    color: white;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: move;
+    user-select: none;
+    box-shadow: 0 4px 0 #05b38a;
+    transition: all 0.2s;
+    min-width: 55px;
+    text-align: center;
+}
+
+.drag-item:hover {
+    background: #09f7bb;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 0 #05b38a;
+}
+
+.drop-zone {
+    padding: 12px 18px;
+    background: #6a11cb;
+    color: white;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 17px;
+    min-width: 85px;
+    text-align: center;
+    box-shadow: 0 4px 0 #4d0b9c;
+    transition: all 0.2s;
+}
+
+.drop-zone.drag-over {
+    background: #7d1fe0;
+    transform: scale(1.05);
+}
+
+/* Квиз */
+.quiz {
+    margin: 30px 0;
+}
+
+.quiz-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #ffd166;
+}
+
+.quiz-item p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1a535c;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.option-btn {
+    padding: 12px 25px;
+    background: #4ecdc4 !important;
+    color: white !important;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 0 #2a8c85;
+}
+
+.option-btn:hover {
+    background: #6ae0d7;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 0 #2a8c85;
+}
+
+.option-btn.selected {
+    background: #ff6b6b;
+    box-shadow: 0 4px 0 #d32f2f;
+}
+
+.option-btn.correct {
+    background: #06d6a0;
+    box-shadow: 0 4px 0 #05b38a;
+}
+
+.option-btn.incorrect {
+    background: #ff6b6b;
+    box-shadow: 0 4px 0 #d32f2f;
+}
+
+/* Кнопки проверки */
+.check-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 40px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 6px 0 #d32f2f;
+    border: 2px solid #1a535c;
+}
+
+.check-btn:hover {
+    background: #ff8e8e;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 0 #d32f2f;
+}
+
+.check-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 0 #d32f2f;
+}
+
+.result {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.result.correct {
+    background: #d4edda;
+    color: #155724;
+    border: 2px solid #c3e6cb;
+}
+
+.result.incorrect {
+    background: #f8d7da;
+    color: #721c24;
+    border: 2px solid #f5c6cb;
+}
+
+.check-all-btn {
+    display: block;
+    margin: 30px auto 20px;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #ff6b6b, #ff4757);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.check-all-btn:hover {
+    background: linear-gradient(135deg, #ff4757, #ff2e43);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.check-all-btn:active {
+    transform: translateY(0);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .pronouns-title {
+        font-size: 28px;
+    }
+    
+    .pronouns-subtitle {
+        font-size: 18px;
+    }
+    
+    .intro-card,
+    .table-card,
+    .verb-card,
+    .interactive-card {
+        padding: 20px;
+    }
+    
+    .verb-forms {
+        grid-template-columns: 1fr;
+    }
+    
+    .drag-container,
+    .drop-container {
+        min-width: 100%;
+        gap: 10px;
+    }
+    
+    .drag-item,
+    .drop-zone {
+        padding: 10px 15px;
+        font-size: 16px;
+        min-width: 50px;
+    }
+    
+    .options {
+        justify-content: center;
+    }
+    
+    .option-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    
+    .check-btn {
+        padding: 12px 30px;
+        font-size: 18px;
+    }
+}

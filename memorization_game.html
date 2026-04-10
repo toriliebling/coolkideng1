@@ -1,0 +1,113 @@
+﻿﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolK1d - РРіСЂР° "Р—Р°РїРѕРјРёРЅР°РЅРёРµ С‡РёСЃРµР»"</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="numbers_style.css">
+    <link rel="stylesheet" href="memorization_game.css">
+</head>
+<body>
+    <!-- РЁР°РїРєР° СЃР°Р№С‚Р° -->
+    <header class="header-kids">
+        <div class="container header-content">
+            <!-- Р›РѕРіРѕС‚РёРї -->
+            <div class="logo-kids">
+                <h1>CoolK1d</h1>
+                <p>Be the top!</p>
+            </div>
+            
+            <!-- РќР°РІРёРіР°С†РёРѕРЅРЅРѕРµ РјРµРЅСЋ -->
+            <nav class="nav-kids">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Р“Р»Р°РІРЅР°СЏ</a></li>
+                    <li><a href="index.html#sections" class="nav-link">Р Р°Р·РґРµР»С‹</a></li>
+                    <li><a href="numbers.html" class="nav-link">Р§РёСЃР»Р° РѕС‚ 1 РґРѕ 10</a></li>                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- РћСЃРЅРѕРІРЅРѕР№ РєРѕРЅС‚РµРЅС‚ -->
+    <main class="numbers-section">
+        <div class="container game-page">
+            <div class="game-header">
+                <h1>РРіСЂР° "Р—Р°РїРѕРјРёРЅР°РЅРёРµ С‡РёСЃРµР»"</h1>
+                <p>РџРѕСЃРјРѕС‚СЂРёС‚Рµ РЅР° С‡РёСЃР»Рѕ Рё РІС‹Р±РµСЂРёС‚Рµ РїСЂР°РІРёР»СЊРЅРѕРµ Р°РЅРіР»РёР№СЃРєРѕРµ СЃР»РѕРІРѕ. РўСЂРµРЅРёСЂСѓР№С‚Рµ Р·Р°РїРѕРјРёРЅР°РЅРёРµ С‡РёСЃРµР» РѕС‚ 1 РґРѕ 10!</p>
+            </div>
+
+            <div class="game-container">
+                <div class="game-stats">
+                    <div class="stat">
+                        <span class="stat-label">РЎС‡РµС‚:</span>
+                        <span id="score">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Р’РѕРїСЂРѕСЃ:</span>
+                        <span id="question-counter">1 / 10</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Р’СЂРµРјСЏ:</span>
+                        <span id="timer">00:00</span>
+                    </div>
+                </div>
+                
+                <div class="question-area">
+                    <div class="question-text">РљР°РєРѕРµ Р°РЅРіР»РёР№СЃРєРѕРµ СЃР»РѕРІРѕ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ С‡РёСЃР»Сѓ?</div>
+                    <div class="number-display" id="number-display">5</div>
+                </div>
+                
+                <div class="options" id="options-container">
+                    <!-- РљРЅРѕРїРєРё СЃ РІР°СЂРёР°РЅС‚Р°РјРё РѕС‚РІРµС‚РѕРІ Р±СѓРґСѓС‚ РґРѕР±Р°РІР»РµРЅС‹ С‡РµСЂРµР· JavaScript -->
+                </div>
+
+                <div class="score-display" id="feedback">
+                    <!-- Р—РґРµСЃСЊ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ РѕР±СЂР°С‚РЅР°СЏ СЃРІСЏР·СЊ -->
+                </div>
+                
+                <div class="game-controls">
+                    <button class="game-btn next-btn" id="next-btn" style="display:none;">РЎР»РµРґСѓСЋС‰РёР№ РІРѕРїСЂРѕСЃ</button>
+                    <button class="game-btn restart-btn" id="restart-btn">РќР°С‡Р°С‚СЊ Р·Р°РЅРѕРІРѕ</button>
+                    <button class="game-btn back-btn" onclick="window.location.href='numbers.html'">Р’РµСЂРЅСѓС‚СЊСЃСЏ Рє С‡РёСЃР»Р°Рј</button>
+                </div>
+            </div>
+
+            <div class="instructions-box">
+                <h3>РљР°Рє РёРіСЂР°С‚СЊ:</h3>
+                <ul>
+                    <li>РќР° СЌРєСЂР°РЅРµ РїРѕСЏРІР»СЏРµС‚СЃСЏ С‡РёСЃР»Рѕ РѕС‚ 1 РґРѕ 10.</li>
+                    <li>Р’С‹Р±РµСЂРёС‚Рµ РїСЂР°РІРёР»СЊРЅС‹Р№ РІР°СЂРёР°РЅС‚ Р°РЅРіР»РёР№СЃРєРѕРіРѕ СЃР»РѕРІР° РёР· С‡РµС‚С‹СЂРµС… РїСЂРµРґР»РѕР¶РµРЅРЅС‹С….</li>
+                    <li>Р—Р° РєР°Р¶РґС‹Р№ РїСЂР°РІРёР»СЊРЅС‹Р№ РѕС‚РІРµС‚ РІС‹ РїРѕР»СѓС‡Р°РµС‚Рµ 1 Р±Р°Р»Р».</li>
+                    <li>РРіСЂР° СЃРѕСЃС‚РѕРёС‚ РёР· 10 РІРѕРїСЂРѕСЃРѕРІ. РџРѕСЃС‚Р°СЂР°Р№С‚РµСЃСЊ РЅР°Р±СЂР°С‚СЊ РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЃС‡РµС‚!</li>
+                    <li>РСЃРїРѕР»СЊР·СѓР№С‚Рµ РєРЅРѕРїРєСѓ "РќР°С‡Р°С‚СЊ Р·Р°РЅРѕРІРѕ", С‡С‚РѕР±С‹ РїРµСЂРµР·Р°РїСѓСЃС‚РёС‚СЊ РёРіСЂСѓ.</li>
+                </ul>
+                <p><strong>РЈРґР°С‡Рё!</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Р¤СѓС‚РµСЂ СЃР°Р№С‚Р° -->
+    <footer class="footer-kids">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>РљРѕРЅС‚Р°РєС‚С‹ Р°РІС‚РѕСЂР°</h3>
+                <p>Р•СЃР»Рё Сѓ РІР°СЃ РµСЃС‚СЊ РІРѕРїСЂРѕСЃС‹ РёР»Рё РїСЂРµРґР»РѕР¶РµРЅРёСЏ, СЃРІСЏР¶РёС‚РµСЃСЊ СЃРѕ РјРЅРѕР№:</p>
+            </div>
+            <div class="footer-buttons">
+                <button class="footer-btn" onclick="window.location.href='https://vk.com/panpantori'">VK</button>
+                <button class="footer-btn" onclick="window.location.href='mailto:vikamamonova11037@gmail.com'">Email</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- РљРЅРѕРїРєР° "РќР°РІРµСЂС…" -->
+    <a href="#" class="scroll-to-top">
+        <img src="images/arrow.png" alt="РќР°РІРµСЂС…"">
+    </a>
+
+    <!-- РџРѕРґРєР»СЋС‡РµРЅРёРµ СЃРєСЂРёРїС‚РѕРІ -->
+    <script src="memorization_game.js"></script>
+    <script src="scroll-to-top.js"></script>
+</body>
+</html>
+

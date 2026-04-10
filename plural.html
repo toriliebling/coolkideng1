@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolK1d - Множественное число существительных</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="plural_style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header-kids">
+        <div class="container header-content">
+            <!-- Логотип -->
+            <div class="logo-kids">
+                <h1>CoolK1d</h1>
+                <p>Be the top!</p>
+            </div>
+            
+            <!-- Навигационное меню -->
+            <nav class="nav-kids">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#sections" class="nav-link">Разделы</a></li>
+                    <li><a href="#" class="nav-link">Тренировочные задания</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="plural-section">
+        <div class="container">
+            <h1 class="plural-title">Множественное число существительных</h1>
+            <p class="plural-subtitle">Изучаем образование множественного числа существительных и исключения (child - children, foot - feet и др.)</p>
+            
+            <!-- Введение -->
+            <div class="intro-card">
+                <h2>Что такое множественное число?</h2>
+                <p>Множественное число (Plural) в английском языке используется, когда вы говорите о двух или более предметах, людях, животных или понятиях. Большинство существительных образуют множественное число очень просто — добавляя окончание <strong>-s</strong> или <strong>-es</strong>.</p>
+                <p>Например: один кот — <strong>cat</strong>, много котов — <strong>cats</strong>; одна книга — <strong>book</strong>, много книг — <strong>books</strong>.</p>
+                <img src="images/apples.jpg" alt="Иллюстрация множественного числа" class="intro-img">
+            </div>
+
+            <!-- Основные правила -->
+            <div class="rules-card">
+                <h2>Основные правила образования множественного числа</h2>
+                <p>В таблице ниже представлены основные правила с примерами:</p>
+                <div class="table-container">
+                    <table class="plural-table">
+                        <thead>
+                            <tr>
+                                <th>Правило</th>
+                                <th>Пример</th>
+                                <th>Множественное число</th>
+                                <th>Произношение</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Добавление -s</strong><br>Большинство существительных</td>
+                                <td>cat, book, pen</td>
+                                <td>cats, books, pens</td>
+                                <td><button class="sound-btn" data-sound="cats">🔊</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Добавление -es</strong><br>Если слово оканчивается на -s, -ss, -sh, -ch, -x, -z, -o</td>
+                                <td>bus, box, dish, tomato</td>
+                                <td>buses, boxes, dishes, tomatoes</td>
+                                <td><button class="sound-btn" data-sound="buses">🔊</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Замена -y на -ies</strong><br>Если перед -y стоит согласная</td>
+                                <td>baby, city, party</td>
+                                <td>babies, cities, parties</td>
+                                <td><button class="sound-btn" data-sound="babies">🔊</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Замена -f/-fe на -ves</strong><br>Некоторые слова на -f или -fe</td>
+                                <td>wolf, knife, leaf</td>
+                                <td>wolves, knives, leaves</td>
+                                <td><button class="sound-btn" data-sound="wolves">🔊</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Слова-исключения</strong><br>Слова, которые меняются полностью</td>
+                                <td>child, foot, tooth, mouse</td>
+                                <td>children, feet, teeth, mice</td>
+                                <td><button class="sound-btn" data-sound="children">🔊</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Слова без изменения</strong><br>Некоторые слова одинаковы в единственном и множественном числе</td>
+                                <td>sheep, fish, deer</td>
+                                <td>sheep, fish, deer</td>
+                                <td><button class="sound-btn" data-sound="sheep">🔊</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Упражнение -->
+            <div class="exercise-card">
+                <h2>Упражнение на множественное число</h2>
+                <p>Выберите правильную форму множественного числа для каждого слова:</p>
+                <div class="quiz-container">
+                    <div class="quiz-item">
+                        <p>1. cat → <input type="text" id="answer1" placeholder="введите множественное число"> <button class="check-btn" data-answer="cats" data-target="answer1">Проверить</button></p>
+                        <p class="feedback" id="feedback1"></p>
+                    </div>
+                    <div class="quiz-item">
+                        <p>2. box → <input type="text" id="answer2" placeholder="введите множественное число"> <button class="check-btn" data-answer="boxes" data-target="answer2">Проверить</button></p>
+                        <p class="feedback" id="feedback2"></p>
+                    </div>
+                    <div class="quiz-item">
+                        <p>3. child → <input type="text" id="answer3" placeholder="введите множественное число"> <button class="check-btn" data-answer="children" data-target="answer3">Проверить</button></p>
+                        <p class="feedback" id="feedback3"></p>
+                    </div>
+                    <div class="quiz-item">
+                        <p>4. knife → <input type="text" id="answer4" placeholder="введите множественное число"> <button class="check-btn" data-answer="knives" data-target="answer4">Проверить</button></p>
+                        <p class="feedback" id="feedback4"></p>
+                    </div>
+                </div>
+                <button id="check-all" class="check-all-btn">Проверить все ответы</button>
+                <div id="quiz-result" class="result"></div>
+            </div>
+
+            <!-- Игра -->
+            <div class="game-card">
+                <h2>Игра: сопоставление слов</h2>
+                <p>Перетащите слова из единственного числа к соответствующему множественному числу:</p>
+                <div class="drag-drop-container">
+                    <div class="drag-column">
+                        <h3>Единственное число</h3>
+                        <div class="drag-item" data-target="children">child</div>
+                        <div class="drag-item" data-target="feet">foot</div>
+                        <div class="drag-item" data-target="teeth">tooth</div>
+                        <div class="drag-item" data-target="mice">mouse</div>
+                        <div class="drag-item" data-target="tomatoes">tomato</div>
+                    </div>
+                    <div class="drop-column">
+                        <h3>Множественное число</h3>
+                        <div class="drop-zone" data-accept="children">children</div>
+                        <div class="drop-zone" data-accept="feet">feet</div>
+                        <div class="drop-zone" data-accept="teeth">teeth</div>
+                        <div class="drop-zone" data-accept="mice">mice</div>
+                        <div class="drop-zone" data-accept="tomatoes">tomatoes</div>
+                    </div>
+                </div>
+                <button id="check-matching" class="check-btn">Проверить сопоставление</button>
+                <div id="matching-result" class="result"></div>
+            </div>
+
+            <!-- Заключение -->
+            <div class="conclusion-card">
+                <h2>Важно запомнить!</h2>
+                <p>Образование множественного числа в английском языке имеет несколько простых правил, но также много исключений. Самые частые исключения — это слова, которые меняются полностью (child → children, foot → feet, tooth → teeth, mouse → mice).</p>
+                <p>Совет: запоминайте неправильные формы постепенно, используя карточки или приложения для запоминания. Практикуйтесь каждый день с нашими интерактивными заданиями!</p>
+                <img src="images/woman.jpg" alt="Книги для изучения" class="conclusion-img">
+            </div>
+
+            <!-- Навигация по странице -->
+            <div class="page-navigation">
+                <a href="pronouns.html" class="nav-btn prev-btn">← Личные местоимения</a>
+                <a href="index.html#sections" class="nav-btn home-btn">Вернуться к разделам</a>
+                <a href="words.html" class="nav-btn next-btn">Слова и предложения →</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер сайта -->
+    <footer class="footer-kids">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Контакты автора</h3>
+                <p>Если у вас есть вопросы или предложения, свяжитесь со мной:</p>
+            </div>
+            <div class="footer-buttons">
+                <button class="footer-btn" onclick="window.location.href='https://vk.com/panpantori'">VK</button>
+                <button class="footer-btn" onclick="window.location.href='mailto:vikamamonova11037@gmail.com'">Email</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="scroll-to-top">
+        <img src="images/arrow.png" alt="Наверх">
+    </a>
+
+    <script src="scroll-to-top.js"></script>
+    <script src="email-popup.js"></script>
+    <script src="plural.js"></script>
+</body>
+</html>

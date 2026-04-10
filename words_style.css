@@ -1,0 +1,206 @@
+
+/* Дополнительные стили для страницы words.html */
+
+.words-section {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+    position: relative;
+}
+
+.words-title {
+    text-align: center;
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 #ffd166;
+    -webkit-text-stroke: 0;
+}
+
+.words-subtitle {
+    text-align: center;
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.words-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.category-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ffd166;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    min-height: 280px;
+    box-sizing: border-box;
+    height: 100%;
+    flex: 1 0 300px;
+    max-width: 100%;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border-color: #06d6a0;
+}
+
+.category-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.category-card h3 {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.category-card p {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+/* Цветовые акценты для разных категорий */
+.category-card[data-category="everyday"] {
+    border-color: #ff6b6b;
+}
+.category-card[data-category="everyday"]:hover {
+    border-color: #ff8e8e;
+}
+
+.category-card[data-category="numbers"] {
+    border-color: #4ecdc4;
+}
+.category-card[data-category="numbers"]:hover {
+    border-color: #6ae0d7;
+}
+
+.category-card[data-category="colors"] {
+    border-color: #ffd166;
+}
+.category-card[data-category="colors"]:hover {
+    border-color: #ffe082;
+}
+
+.category-card[data-category="family"] {
+    border-color: #6a11cb;
+}
+.category-card[data-category="family"]:hover {
+    border-color: #7d1fe0;
+}
+
+.category-card[data-category="food"] {
+    border-color: #06d6a0;
+}
+.category-card[data-category="food"]:hover {
+    border-color: #09f7bb;
+}
+
+.category-card[data-category="clothing"] {
+    border-color: #ff9e6d;
+}
+.category-card[data-category="clothing"]:hover {
+    border-color: #ffb38a;
+}
+
+.instructions {
+    text-align: center;
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 60px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instructions h3 {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .words-title {
+        font-size: 28px;
+    }
+    
+    .words-subtitle {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+    
+    .words-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .category-card {
+        padding: 20px 15px;
+        min-height: 240px;
+        box-sizing: border-box;
+        height: 100%;
+        flex: 1 0 300px;
+        max-width: 100%;
+    }
+    
+    .category-icon {
+        font-size: 50px;
+    }
+    
+    .category-card h3 {
+        font-size: 20px;
+    }
+    
+    .category-card p {
+        font-size: 15px;
+    }
+    
+    .instructions {
+        padding: 20px;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+    
+}

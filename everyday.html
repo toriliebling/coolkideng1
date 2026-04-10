@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CoolK1d - Повседневные разговоры</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="everyday_style.css">
+
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+
+    <header class="header-kids">
+
+        <div class="container header-content">
+
+            <!-- Логотип -->
+
+            <div class="logo-kids">
+
+                <h1>CoolK1d</h1>
+
+                <p>Be the top!</p>
+
+            </div>
+
+            
+
+            <!-- Навигационное меню -->
+
+            <nav class="nav-kids">
+
+                <ul>
+
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+
+                    <li><a href="index.html#sections" class="nav-link">Разделы</a></li>
+
+                    <li><a href="#" class="nav-link">Тренировочные задания</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Основной контент -->
+
+    <main class="everyday-section">
+
+        <div class="container">
+
+            <h1 class="everyday-title">Повседневные разговоры</h1>
+
+            <p class="everyday-subtitle">Основные фразы для общения в бытовых ситуациях. Нажмите на кнопку 🔊, чтобы услышать произношение.</p>
+
+            
+
+            <!-- Сетка фраз -->
+
+            <div class="everyday-grid">
+
+                <div class="phrase-card" data-phrase="hello">
+
+                    <h3 class="phrase-english">Hello</h3>
+
+                    <p class="phrase-translation">Привет</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('hello')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/hello.jpg" alt="Hello">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="how-are-you">
+
+                    <h3 class="phrase-english">How are you?</h3>
+
+                    <p class="phrase-translation">Как дела?</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('how-are-you')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/howareyou.jpg" alt="How are you">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="good-morning">
+
+                    <h3 class="phrase-english">Good morning</h3>
+
+                    <p class="phrase-translation">Доброе утро</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('good-morning')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/goodmorning.jpg" alt="Good morning">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="good-afternoon">
+
+                    <h3 class="phrase-english">Good afternoon</h3>
+
+                    <p class="phrase-translation">Добрый день</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('good-afternoon')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/goodafternoon.jpg" alt="Good afternoon">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="good-evening">
+
+                    <h3 class="phrase-english">Good evening</h3>
+
+                    <p class="phrase-translation">Добрый вечер</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('good-evening')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/evening.jpg" alt="Good evening">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="good-night">
+
+                    <h3 class="phrase-english">Good night</h3>
+
+                    <p class="phrase-translation">Спокойной ночи</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('good-night')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/goodnight.jpg" alt="Good night">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="thank-you">
+
+                    <h3 class="phrase-english">Thank you</h3>
+
+                    <p class="phrase-translation">Спасибо</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('thank-you')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/thankyou.jpg" alt="Thank you">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="you-are-welcome">
+
+                    <h3 class="phrase-english">You're welcome</h3>
+
+                    <p class="phrase-translation">Пожалуйста</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('you-are-welcome')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/youarewelcome.jpg" alt="You're welcome">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="sorry">
+
+                    <h3 class="phrase-english">Sorry</h3>
+
+                    <p class="phrase-translation">Извините</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('sorry')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/sorry.jpg" alt="Sorry">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="excuse-me">
+
+                    <h3 class="phrase-english">Excuse me</h3>
+
+                    <p class="phrase-translation">Простите</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('excuse-me')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/excuseme.jpg" alt="Excuse me">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="yes">
+
+                    <h3 class="phrase-english">Yes</h3>
+
+                    <p class="phrase-translation">Да</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('yes')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/yes.jpg" alt="Yes">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="no">
+
+                    <h3 class="phrase-english">No</h3>
+
+                    <p class="phrase-translation">Нет</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('no')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/no.jpg" alt="No">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="please">
+
+                    <h3 class="phrase-english">Please</h3>
+
+                    <p class="phrase-translation">Пожалуйста</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('please')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/please.jpg" alt="Please">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="what-is-your-name">
+
+                    <h3 class="phrase-english">What is your name?</h3>
+
+                    <p class="phrase-translation">Как тебя зовут?</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('what-is-your-name')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/whatisyourname.jpg" alt="What is your name">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="my-name-is">
+
+                    <h3 class="phrase-english">My name is...</h3>
+
+                    <p class="phrase-translation">Меня зовут...</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('my-name-is')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/mynameis.jpg" alt="My name is">
+
+                    </div>
+
+                </div>
+
+                <div class="phrase-card" data-phrase="nice-to-meet-you">
+
+                    <h3 class="phrase-english">Nice to meet you</h3>
+
+                    <p class="phrase-translation">Приятно познакомиться</p>
+
+                    <button class="phrase-btn play-sound" onclick="playPhraseSound('nice-to-meet-you')">🔊 Произношение</button>
+
+                    <div class="phrase-image">
+
+                        <img src="images/imgeveryday/nicetomeetyou.jpg" alt="Nice to meet you">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Игры и упражнения -->
+
+            <div class="games-section">
+
+                <h2>Практикуйтесь с играми!</h2>
+
+                <p>Закрепите изученные фразы с помощью интерактивных игр:</p>
+
+                <div class="games-grid">
+
+                    <a href="everyday_listening_game.html" class="game-card">
+
+                        <div class="game-icon">👂</div>
+
+                        <h3>Игра на слушание</h3>
+
+                        <p>Слушайте фразы и выбирайте правильный перевод</p>
+
+                    </a>
+
+                    <a href="everyday_matching_game.html" class="game-card">
+
+                        <div class="game-icon">🔤</div>
+
+                        <h3>Игра на сопоставление</h3>
+
+                        <p>Сопоставьте английские фразы с русскими переводами</p>
+
+                    </a>
+
+                    <a href="everyday_memorization_game.html" class="game-card">
+
+                        <div class="game-icon">🧠</div>
+
+                        <h3>Игра на запоминание</h3>
+
+                        <p>Запомните фразы и повторите их</p>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- Футер сайта -->
+
+    <footer class="footer-kids">
+
+        <div class="container footer-content">
+
+            <div class="footer-info">
+
+                <h3>Контакты автора</h3>
+
+                <p>Если у вас есть вопросы или предложения, свяжитесь со мной:</p>
+
+            </div>
+
+            <div class="footer-buttons">
+
+                <button class="footer-btn" onclick="window.location.href='https://vk.com/panpantori'">VK</button>
+
+                <button class="footer-btn" onclick="window.location.href='mailto:vikamamonova11037@gmail.com'">Email</button>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Кнопка "Наверх" -->
+
+    <a href="#" class="scroll-to-top">
+
+        <img src="images/arrow.png" alt="Наверх">
+
+    </a>
+
+
+
+    <script src="scroll-to-top.js"></script>
+
+    <script src="email-popup.js"></script>
+
+    <script src="everyday.js"></script>
+
+</body>
+
+</html>
+

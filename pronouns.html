@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolK1d - Личные местоимения и глагол to be</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="pronouns_style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header-kids">
+        <div class="container header-content">
+            <!-- Логотип -->
+            <div class="logo-kids">
+                <h1>CoolK1d</h1>
+                <p>Be the top!</p>
+            </div>
+            
+            <!-- Навигационное меню -->
+            <nav class="nav-kids">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#sections" class="nav-link">Разделы</a></li>
+                    <li><a href="#" class="nav-link">Тренировочные задания</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="pronouns-section">
+        <div class="container">
+            <h1 class="pronouns-title">Личные местоимения и глагол to be</h1>
+            
+            <!-- Введение -->
+            <div class="intro-card">
+                <h2>Что такое личные местоимения?</h2>
+                <p>Личные местоимения — это слова, которые заменяют имена людей, животных, предметов или понятий. В английском языке они очень важны, потому что помогают избежать повторения и делать речь естественной.</p>
+                <p>Например, вместо того чтобы говорить "Катя пошла в школу", вы можете сказать "Она пошла в школу". Слово "она" — это личное местоимение.</p>
+                <img src="images/pronoun_img.png" alt="Иллюстрация местоимений" class="intro-img">
+            </div>
+
+            <!-- Таблица местоимений -->
+            <div class="table-card">
+                <h2>Личные местоимения в английском языке</h2>
+                <p>В таблице ниже представлены все личные местоимения с переводом и примерами:</p>
+                <div class="table-container">
+                    <table class="pronouns-table">
+                        <thead>
+                            <tr>
+                                <th>Местоимение</th>
+                                <th>Перевод</th>
+                                <th>Пример</th>
+                                <th>Произношение</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>I</strong></td>
+                                <td>Я</td>
+                                <td>I am a student.</td>
+                                <td><button class="sound-btn" data-sound="I">🔊</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>you</strong></td>
+                                <td>ты / вы</td>
+                                <td>You are my friend.</td>
+                                <td><button class="sound-btn" data-sound="you">🔊</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>he</strong></td>
+                                <td>он</td>
+                                <td>He is a doctor.</td>
+                                <td><button class="sound-btn" data-sound="he">🔊</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>she</strong></td>
+                                <td>она</td>
+                                <td>She is a teacher.</td>
+                                <td><button class="sound-btn" data-sound="she">🔊</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>it</strong></td>
+                                <td>оно</td>
+                                <td>It is a cat.</td>
+                                <td><button class="sound-btn" data-sound="it">🔊</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>we</strong></td>
+                                <td>мы</td>
+                                <td>We are happy.</td>
+                                <td><button class="sound-btn" data-sound="we">🔊</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>they</strong></td>
+                                <td>они</td>
+                                <td>They are students.</td>
+                                <td><button class="sound-btn" data-sound="they">🔊</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Глагол to be -->
+            <div class="verb-card">
+                <h2>Глагол to be (быть, находиться)</h2>
+                <p>Глагол <strong>to be</strong> — один из самых важных глаголов в английском языке. Он имеет три формы в настоящем времени:</p>
+                <div class="verb-forms">
+                    <div class="verb-form">
+                        <h3>am</h3>
+                        <p>Используется с местоимением <strong>I</strong></p>
+                        <p class="example">I <strong>am</strong> a student.</p>
+                    </div>
+                    <div class="verb-form">
+                        <h3>is</h3>
+                        <p>Используется с местоимениями <strong>he, she, it</strong></p>
+                        <p class="example">He <strong>is</strong> a doctor.</p>
+                    </div>
+                    <div class="verb-form">
+                        <h3>are</h3>
+                        <p>Используется с местоимениями <strong>you, we, they</strong></p>
+                        <p class="example">You <strong>are</strong> my friend.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Упражнения -->
+            <div class="exercises-card">
+                <h2>Попробуйте сами!</h2>
+                <p>Выберите правильную форму глагола to be для каждого предложения:</p>
+                <div class="exercise" id="exercise1">
+                    <p>I ______ a student.</p>
+                    <div class="options">
+                        <button class="option-btn" data-correct="am">am</button>
+                        <button class="option-btn" data-correct="is">is</button>
+                        <button class="option-btn" data-correct="are">are</button>
+                    </div>
+                    <p class="feedback" id="feedback1"></p>
+                </div>
+                <div class="exercise" id="exercise2">
+                    <p>She ______ a teacher.</p>
+                    <div class="options">
+                        <button class="option-btn" data-correct="am">am</button>
+                        <button class="option-btn" data-correct="is">is</button>
+                        <button class="option-btn" data-correct="are">are</button>
+                    </div>
+                    <p class="feedback" id="feedback2"></p>
+                </div>
+                <div class="exercise" id="exercise3">
+                    <p>They ______ happy.</p>
+                    <div class="options">
+                        <button class="option-btn" data-correct="am">am</button>
+                        <button class="option-btn" data-correct="is">is</button>
+                        <button class="option-btn" data-correct="are">are</button>
+                    </div>
+                    <p class="feedback" id="feedback3"></p>
+                </div>
+                <button id="check-quiz" class="check-all-btn">Проверить все ответы</button>
+                <div id="quiz-result" class="result"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер сайта -->
+    <footer class="footer-kids">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Контакты автора</h3>
+                <p>Если у вас есть вопросы или предложения, свяжитесь со мной:</p>
+            </div>
+            <div class="footer-buttons">
+                <button class="footer-btn" onclick="window.location.href='https://vk.com/panpantori'">VK</button>
+                <button class="footer-btn" onclick="window.location.href='mailto:vikamamonova11037@gmail.com'">Email</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="scroll-to-top">
+        <img src="images/arrow.png" alt="Наверх">
+    </a>
+
+    <script src="scroll-to-top.js"></script>
+    <script src="email-popup.js"></script>
+    <script src="pronouns.js"></script>
+</body>
+</html>

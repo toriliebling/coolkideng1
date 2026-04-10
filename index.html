@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolK1d - Учим английский с удовольствием!</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Новая шапка -->
+    <header class="header-kids">
+        <div class="container header-content">
+            <!-- Логотип -->
+            <div class="logo-kids">
+                <h1>CoolK1d</h1>
+                <p>Be the top!</p>
+            </div>
+            
+            <!-- Навигационное меню -->
+            <nav class="nav-kids">
+                <ul>
+                    <li><a href="#" class="nav-link active">Главная</a></li>
+                    <li><a href="#sections" class="nav-link">Разделы</a></li>
+                    <li><a href="#" class="nav-link">Тренировочные задания</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero container">
+        <div class="hero--info">
+            <h2>Изучаем английский просто!</h2>
+            <h1>Добро пожаловать на наш сайт!</h1>
+            <p>Найдите интересные для вас курсы на сайте и попробуйте уделять 15 мин упражнениям 3-5 дней в неделю — в таком легком темпе уже скоро вы увидите улучшение своего английского!</p>
+            
+        </div>
+        <img src="images/school.jpg" alt="Веселое изучение английского">
+    </div>
+    
+    <!-- Главное меню с разделами -->
+    <main class="main-content">
+        <div class="container">
+            <h2 class="section-title" id="sections">Разделы обучения</h2>
+            <div class="sections-grid">
+                <div class="section-card">
+                    <img src="images/books.jpg" alt="Буквы и звуки" class="section-img">
+                    <h3>Буквы и звуки</h3>
+                    <p>Изучаем алфавит и правильное произношение звуков английского языка</p>
+                    <button class="section-btn" onclick="window.location.href='sounds.html'">Перейти</button>
+                </div>
+                
+                <div class="section-card">
+                    <img src="images/aipad.jpg" alt="Слова и предложения" class="section-img">
+                    <h3>Слова и предложения</h3>
+                    <p>Расширяем словарный запас и учимся составлять предложения</p>
+                    <button class="section-btn" onclick="window.location.href='words.html'">Перейти</button>
+                </div>
+                
+                <div class="section-card">
+                    <img src="images/handsaaa.png" alt="Личные местоимения" class="section-img">
+                    <h3>Личные местоимения и глагол to be</h3>
+                    <p>Изучаем личные местоимения (I, you, he, she, it, we, they) и спряжение глагола to be (am, is, are)</p>
+                    <button class="section-btn" onclick="window.location.href='pronouns.html'">Перейти</button>
+                </div>
+                
+                <div class="section-card">
+                    <img src="images/tinypeople.jpg" alt="Множественное число" class="section-img">
+                    <h3>Множественное число</h3>
+                    <p>Изучаем образование множественного числа существительных и исключения (child - children, foot - feet и др.)</p>
+                    <button class="section-btn" onclick="window.location.href='plural.html'">Перейти</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Футер сайта -->
+    <footer class="footer-kids">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Контакты автора</h3>
+                <p>Если у вас есть вопросы или предложения, свяжитесь со мной:</p>
+            </div>
+            <div class="footer-buttons">
+                <button class="footer-btn" onclick="window.location.href='https://vk.com/panpantori'">VK</button>
+                <button class="footer-btn" onclick="window.location.href='mailto:vikamamonova11037@gmail.com'">Email</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="scroll-to-top">
+        <img src="images/arrow.png" alt="Наверх">
+    </a>
+
+    <script src="scroll-to-top.js"></script>
+    <script src="email-popup.js"></script>
+</body>
+</html>

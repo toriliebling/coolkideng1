@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolK1d - Игра "Запоминание фраз"</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="everyday_style.css">
+    <link rel="stylesheet" href="everyday_memorization_game.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header-kids">
+        <div class="container header-content">
+            <!-- Логотип -->
+            <div class="logo-kids">
+                <h1>CoolK1d</h1>
+                <p>Be the top!</p>
+            </div>
+            
+            <!-- Навигационное меню -->
+            <nav class="nav-kids">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#sections" class="nav-link">Разделы</a></li>
+                    <li><a href="everyday.html" class="nav-link">Повседневный разговор</a></li>                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="everyday-section">
+        <div class="container game-page">
+            <div class="game-header">
+                <h1>Игра "Запоминание фраз"</h1>
+                <p>Посмотрите на перевод фразы и выберите правильный английский вариант. Тренируйте запоминание повседневных фраз!</p>
+            </div>
+
+            <div class="game-container">
+                <div class="game-stats">
+                    <div class="stat">
+                        <span class="stat-label">Счет:</span>
+                        <span id="score">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Вопрос:</span>
+                        <span id="question-counter">1 / 10</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Время:</span>
+                        <span id="timer">00:00</span>
+                    </div>
+                </div>
+                
+                <div class="question-area">
+                    <div class="question-text">Какая английская фраза соответствует переводу?</div>
+                    <div class="phrase-display" id="phrase-display">Привет</div>
+                </div>
+                
+                <div class="options" id="options-container">
+                    <!-- Кнопки с вариантами ответов будут добавлены через JavaScript -->
+                </div>
+
+                <div class="score-display" id="feedback">
+                    <!-- Здесь будет отображаться обратная связь -->
+                </div>
+                
+                <div class="game-controls">
+                    <button class="game-btn next-btn" id="next-btn" style="display:none;">Следующий вопрос</button>
+                    <button class="game-btn restart-btn" id="restart-btn">Начать заново</button>
+                    <button class="game-btn back-btn" onclick="window.location.href='everyday.html'">Вернуться к фразам</button>
+                </div>
+            </div>
+
+            <div class="instructions-box">
+                <h3>Как играть:</h3>
+                <ul>
+                    <li>На экране появляется перевод фразы на русском.</li>
+                    <li>Выберите правильный вариант английской фразы из четырех предложенных.</li>
+                    <li>За каждый правильный ответ вы получаете 1 балл.</li>
+                    <li>Игра состоит из 10 вопросов. Постарайтесь набрать максимальный счет!</li>
+                    <li>Используйте кнопку "Начать заново", чтобы перезапустить игру.</li>
+                </ul>
+                <p><strong>Удачи!</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер сайта -->
+    <footer class="footer-kids">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Контакты автора</h3>
+                <p>Если у вас есть вопросы или предложения, свяжитесь со мной:</p>
+            </div>
+            <div class="footer-buttons">
+                <button class="footer-btn" onclick="window.location.href='https://vk.com/panpantori'">VK</button>
+                <button class="footer-btn" onclick="window.location.href='mailto:vikamamonova11037@gmail.com'">Email</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="scroll-to-top">
+        <img src="images/arrow.png" alt="Наверх">
+    </a>
+
+    <!-- Подключение скриптов -->
+    <script src="everyday_memorization_game.js"></script>
+    <script src="scroll-to-top.js"></script>
+</body>
+</html>
+

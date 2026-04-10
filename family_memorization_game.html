@@ -1,0 +1,122 @@
+﻿﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolK1d - Игра "Запоминание слов" (Семья)</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="family_style.css">
+    <link rel="stylesheet" href="family_memorization_game.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header-kids">
+        <div class="container header-content">
+            <!-- Логотип -->
+            <div class="logo-kids">
+                <h1>CoolK1d</h1>
+                <p>Be the top!</p>
+            </div>
+            
+            <!-- Навигационное меню -->
+            <nav class="nav-kids">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#sections" class="nav-link">Разделы</a></li>
+                    <li><a href="family.html" class="nav-link">Семья</a></li>                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="family-section">
+        <div class="container game-page">
+            <div class="game-header">
+                <h1>Игра "Запоминание слов" (Семья)</h1>
+                <p>Изучите слова, затем проверьте свою память, выбирая правильный перевод. Сначала изучите все слова, затем пройдите тест.</p>
+            </div>
+
+            <div class="game-container">
+                <div class="game-stats">
+                    <div class="stat">
+                        <span class="stat-label">Изучено слов:</span>
+                        <span id="studied-count">0 / 12</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Счёт в тесте:</span>
+                        <span id="test-score">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Время:</span>
+                        <span id="timer">00:00</span>
+                    </div>
+                </div>
+                
+                <div class="study-area" id="study-area">
+                    <div class="word-display" id="word-display">Mother</div>
+                    <div class="translation-display" id="translation-display">Нажмите "Показать перевод"</div>
+                    <div class="study-controls">
+                        <button class="study-btn show-translation-btn" id="show-translation-btn">Показать перевод</button>
+                        <button class="study-btn next-word-btn" id="next-word-btn">Следующее слово</button>
+                        <button class="study-btn start-test-btn" id="start-test-btn">Начать тест</button>
+                    </div>
+                </div>
+                
+                <div class="test-area" id="test-area">
+                    <div class="test-question" id="test-question">Как переводится слово "Mother"?</div>
+                    <div class="test-options" id="test-options">
+                        <!-- Кнопки с вариантами будут добавлены через JavaScript -->
+                    </div>
+                    <div class="test-feedback" id="test-feedback"></div>
+                </div>
+
+                <div class="score-display" id="final-score" style="display:none;">
+                    <!-- Здесь будет отображаться итоговый счёт -->
+                </div>
+                
+                <div class="game-controls">
+                    <button class="game-btn restart-btn" id="restart-btn">Начать заново</button>
+                    <button class="game-btn back-btn" onclick="window.location.href='family.html'">Вернуться к словам</button>
+                </div>
+            </div>
+
+            <div class="instructions-box">
+                <h3>Как играть:</h3>
+                <ul>
+                    <li><strong>Фаза изучения:</strong> Нажимайте "Показать перевод", чтобы увидеть перевод слова. Затем "Следующее слово" для перехода к следующему слову. Изучите все 12 слов.</li>
+                    <li><strong>Фаза теста:</strong> После изучения всех слов нажмите "Начать тест". Вам будут показаны слова на английском, и нужно выбрать правильный перевод из четырёх вариантов.</li>
+                    <li>За каждый правильный ответ в тесте вы получаете 1 балл.</li>
+                    <li>Постарайтесь набрать максимальный счёт!</li>
+                    <li>Используйте кнопку "Начать заново", чтобы перезапустить игру.</li>
+                </ul>
+                <p><strong>Удачи!</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер сайта -->
+    <footer class="footer-kids">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Контакты автора</h3>
+                <p>Если у вас есть вопросы или предложения, свяжитесь со мной:</p>
+            </div>
+            <div class="footer-buttons">
+                <button class="footer-btn" onclick="window.location.href='https://vk.com/panpantori'">VK</button>
+                <button class="footer-btn" onclick="window.location.href='mailto:vikamamonova11037@gmail.com'">Email</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="scroll-to-top">
+        <img src="images/arrow.png" alt="Наверх">
+    </a>
+
+    <!-- Подключение скриптов -->
+    <script src="family_memorization_game.js"></script>
+    <script src="scroll-to-top.js"></script>
+</body>
+</html>
+
+

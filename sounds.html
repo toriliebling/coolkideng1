@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolK1d - Буквы и звуки английского языка</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="sounds_style.css">
+</head>
+<script src="sounds.js"></script>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header-kids">
+        <div class="container header-content">
+            <!-- Логотип -->
+            <div class="logo-kids">
+                <h1>CoolK1d</h1>
+                <p>Be the top!</p>
+            </div>
+            
+            <!-- Навигационное меню -->
+            <nav class="nav-kids">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#sections" class="nav-link">Разделы</a></li>
+                    <li><a href="#" class="nav-link">Тренировочные задания</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="alphabet-section">
+        <div class="container">
+            <h1 class="alphabet-title">Приступаем к изучению английского алфавита</h1>
+            <p class="alphabet-subtitle">Нажмите на любую букву, чтобы услышать ее произношение. Гласные буквы выделены зеленым цветом, согласные - фиолетовым.</p>
+            
+            <!-- Аудио элементы для каждой буквы (скрытые) -->
+            <div style="display: none;">
+                <audio id="audio-A" preload="auto">
+                    <source src="sounds_letters/a.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-B" preload="auto">
+                    <source src="sounds_letters/letter-b.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-C" preload="auto">
+                    <source src="sounds_letters/letter-c.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-D" preload="auto">
+                    <source src="sounds_letters/letter-d.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-E" preload="auto">
+                    <source src="sounds_letters/letter-e.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-F" preload="auto">
+                    <source src="sounds_letters/letter-f.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-G" preload="auto">
+                    <source src="sounds_letters/letter-g.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-H" preload="auto">
+                    <source src="sounds_letters/letter-h.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-I" preload="auto">
+                    <source src="sounds_letters/letter-i.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-J" preload="auto">
+                    <source src="sounds_letters/letter-j.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-K" preload="auto">
+                    <source src="sounds_letters/letter-k.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-L" preload="auto">
+                    <source src="sounds_letters/letter-l.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-M" preload="auto">
+                    <source src="sounds_letters/letter-m.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-N" preload="auto">
+                    <source src="sounds_letters/letter-n.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-O" preload="auto">
+                    <source src="sounds_letters/letter-o.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-P" preload="auto">
+                    <source src="sounds_letters/letter-p.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-Q" preload="auto">
+                    <source src="sounds_letters/letter-q.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-R" preload="auto">
+                    <source src="sounds_letters/letter-r.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-S" preload="auto">
+                    <source src="sounds_letters/letter-s.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-T" preload="auto">
+                    <source src="sounds_letters/letter-t.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-U" preload="auto">
+                    <source src="sounds_letters/letter-u.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-V" preload="auto">
+                    <source src="sounds_letters/letter-v.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-W" preload="auto">
+                    <source src="sounds_letters/letter-w.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-X" preload="auto">
+                    <source src="sounds_letters/letter-x.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-Y" preload="auto">
+                    <source src="sounds_letters/letter-y.mp3" type="audio/mpeg">
+                </audio>
+                <audio id="audio-Z" preload="auto">
+                    <source src="sounds_letters/letter-z.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            
+            <!-- Аудио элементы для звуков (скрытые, будут сгенерированы JavaScript) -->
+            <div id="audio-container-sounds" style="display: none;"></div>
+            
+            <!-- Кнопки с буквами алфавита -->
+            <div class="alphabet-grid">
+                <!-- Гласные буквы -->
+                <button class="letter-btn vowel" onclick="playSoundAndShowAnimal('A', this)" title="Буква A. Нажмите, чтобы услышать произношение">A</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('B', this)" title="Буква B. Нажмите, чтобы услышать произношение">B</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('C', this)" title="Буква C. Нажмите, чтобы услышать произношение">C</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('D', this)" title="Буква D. Нажмите, чтобы услышать произношение">D</button>
+                <button class="letter-btn vowel" onclick="playSoundAndShowAnimal('E', this)" title="Буква E. Нажмите, чтобы услышать произношение">E</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('F', this)" title="Буква F. Нажмите, чтобы услышать произношение">F</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('G', this)" title="Буква G. Нажмите, чтобы услышать произношение">G</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('H', this)" title="Буква H. Нажмите, чтобы услышать произношение">H</button>
+                <button class="letter-btn vowel" onclick="playSoundAndShowAnimal('I', this)" title="Буква I. Нажмите, чтобы услышать произношение">I</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('J', this)" title="Буква J. Нажмите, чтобы услышать произношение">J</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('K', this)" title="Буква K. Нажмите, чтобы услышать произношение">K</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('L', this)" title="Буква L. Нажмите, чтобы услышать произношение">L</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('M', this)" title="Буква M. Нажмите, чтобы услышать произношение">M</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('N', this)" title="Буква N. Нажмите, чтобы услышать произношение">N</button>
+                <button class="letter-btn vowel" onclick="playSoundAndShowAnimal('O', this)" title="Буква O. Нажмите, чтобы услышать произношение">O</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('P', this)" title="Буква P. Нажмите, чтобы услышать произношение">P</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('Q', this)" title="Буква Q. Нажмите, чтобы услышать произношение">Q</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('R', this)" title="Буква R. Нажмите, чтобы услышать произношение">R</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('S', this)" title="Буква S. Нажмите, чтобы услышать произношение">S</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('T', this)" title="Буква T. Нажмите, чтобы услышать произношение">T</button>
+                <button class="letter-btn vowel" onclick="playSoundAndShowAnimal('U', this)" title="Буква U. Нажмите, чтобы услышать произношение">U</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('V', this)" title="Буква V. Нажмите, чтобы услышать произношение">V</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('W', this)" title="Буква W. Нажмите, чтобы услышать произношение">W</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('X', this)" title="Буква X. Нажмите, чтобы услышать произношение">X</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('Y', this)" title="Буква Y. Нажмите, чтобы услышать произношение">Y</button>
+                <button class="letter-btn consonant" onclick="playSoundAndShowAnimal('Z', this)" title="Буква Z. Нажмите, чтобы услышать произношение">Z</button>
+            </div>
+            
+            <!-- Раздел звуков английского языка -->
+            <section class="sounds-section">
+                <div class="container">
+                    <h2 class="sounds-title">Фонетические звуки английского языка</h2>
+                    <p class="sounds-subtitle">Нажмите на кнопку "Звук", чтобы услышать произношение фонемы, или "Слово", чтобы услышать пример слова. Гласные звуки выделены зеленым, согласные — фиолетовым.</p>
+                    <div id="sounds-grid" class="sounds-grid">
+                        <!-- Карточки звуков будут сгенерированы JavaScript -->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Попап с животным -->
+            <div class="animal-popup" id="animal-popup">
+                <div class="popup-content">
+                    <button class="popup-close" onclick="closeAnimalPopup()">×</button>
+                    <div class="animal-image">
+                        <img id="popup-image" src="images/animals/antilope.jpg" alt="Животное">
+                    </div>
+                    <div class="animal-info">
+                        <h3 id="popup-letter">A</h3>
+                        <h4 id="popup-animal-name">Антилопа</h4>
+                        <p id="popup-fact">Антилопы — быстрые травоядные животные, обитающие в саваннах Африки.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Футер сайта -->
+    <footer class="footer-kids">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Контакты автора</h3>
+                <p>Если у вас есть вопросы или предложения, свяжитесь со мной:</p>
+            </div>
+            <div class="footer-buttons">
+                <button class="footer-btn" onclick="window.location.href='https://vk.com/panpantori'">VK</button>
+                <button class="footer-btn" onclick="window.location.href='mailto:vikamamonova11037@gmail.com'">Email</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="scroll-to-top">
+        <img src="images/arrow.png" alt="Наверх">
+    </a>
+
+    <script src="scroll-to-top.js"></script>
+    <script src="email-popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolK1d - Числа от 1 до 10</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="numbers_style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header-kids">
+        <div class="container header-content">
+            <!-- Логотип -->
+            <div class="logo-kids">
+                <h1>CoolK1d</h1>
+                <p>Be the top!</p>
+            </div>
+            
+            <!-- Навигационное меню -->
+            <nav class="nav-kids">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#sections" class="nav-link">Разделы</a></li>
+                    <li><a href="#" class="nav-link">Тренировочные задания</a></li>                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="numbers-section">
+        <div class="container">
+            <h1 class="numbers-title">Изучаем числа от 1 до 10</h1>
+            <p class="numbers-subtitle">Нажмите на любое число, чтобы услышать его произношение. Изучайте цифры, количество и простые задания.</p>
+            
+            <!-- Сетка чисел -->
+            <div class="numbers-grid">
+                <div class="number-card" data-number="1">
+                    <div class="number-icon">1</div>
+                    <h3 class="number-word">One</h3>
+                    <p class="number-translation">Один</p>
+                    <button class="number-btn play-sound" onclick="playNumberSound(1)">🔊 Произношение</button>
+                </div>
+                <div class="number-card" data-number="2">
+                    <div class="number-icon">2</div>
+                    <h3 class="number-word">Two</h3>
+                    <p class="number-translation">Два</p>
+                    <button class="number-btn play-sound" onclick="playNumberSound(2)">🔊 Произношение</button>
+                </div>
+                <div class="number-card" data-number="3">
+                    <div class="number-icon">3</div>
+                    <h3 class="number-word">Three</h3>
+                    <p class="number-translation">Три</p>
+                    <button class="number-btn play-sound" onclick="playNumberSound(3)">🔊 Произношение</button>
+                </div>
+                <div class="number-card" data-number="4">
+                    <div class="number-icon">4</div>
+                    <h3 class="number-word">Four</h3>
+                    <p class="number-translation">Четыре</p>
+                    <button class="number-btn play-sound" onclick="playNumberSound(4)">🔊 Произношение</button>
+                </div>
+                <div class="number-card" data-number="5">
+                    <div class="number-icon">5</div>
+                    <h3 class="number-word">Five</h3>
+                    <p class="number-translation">Пять</p>
+                    <button class="number-btn play-sound" onclick="playNumberSound(5)">🔊 Произношение</button>
+                </div>
+                <div class="number-card" data-number="6">
+                    <div class="number-icon">6</div>
+                    <h3 class="number-word">Six</h3>
+                    <p class="number-translation">Шесть</p>
+                    <button class="number-btn play-sound" onclick="playNumberSound(6)">🔊 Произношение</button>
+                </div>
+                <div class="number-card" data-number="7">
+                    <div class="number-icon">7</div>
+                    <h3 class="number-word">Seven</h3>
+                    <p class="number-translation">Семь</p>
+                    <button class="number-btn play-sound" onclick="playNumberSound(7)">🔊 Произношение</button>
+                </div>
+                <div class="number-card" data-number="8">
+                    <div class="number-icon">8</div>
+                    <h3 class="number-word">Eight</h3>
+                    <p class="number-translation">Восемь</p>
+                    <button class="number-btn play-sound" onclick="playNumberSound(8)">🔊 Произношение</button>
+                </div>
+                <div class="number-card" data-number="9">
+                    <div class="number-icon">9</div>
+                    <h3 class="number-word">Nine</h3>
+                    <p class="number-translation">Девять</p>
+                    <button class="number-btn play-sound" onclick="playNumberSound(9)">🔊 Произношение</button>
+                </div>
+                <div class="number-card" data-number="10">
+                    <div class="number-icon">10</div>
+                    <h3 class="number-word">Ten</h3>
+                    <p class="number-translation">Десять</p>
+                    <button class="number-btn play-sound" onclick="playNumberSound(10)">🔊 Произношение</button>
+                </div>
+            </div>
+
+            <div class="instructions">
+                <p>1. Нажмите на кнопку 🔊 под числом, чтобы услышать произношение на английском</p>
+                <p>2. Повторите число вслух, стараясь имитировать произношение</p>
+                <p>3. Запомните написание числа и его перевод</p>
+                <p>4. Попробуйте выполнить задания ниже для закрепления</p>
+            </div>
+
+            <!-- Задания -->
+            <div class="exercises-section">
+                <h2 class="exercises-title">Тренировочные задания</h2>
+                <p class="exercises-subtitle">Проверьте свои знания с помощью интерактивных заданий.</p>
+                
+                <div class="exercises-grid">
+                    <div class="exercise-card">
+                        <h3>Сопоставление</h3>
+                        <p>Сопоставьте число на английском с его переводом.</p>
+                        <a href="matching_game.html" class="exercise-btn">Начать игру</a>
+                    </div>
+                    <div class="exercise-card">
+                        <h3>Счет</h3>
+                        <p>Посчитайте количество предметов и выберите правильный ответ.</p>
+                        <a href="counting_game.html" class="exercise-btn">Начать игру</a>
+                    </div>
+                    <div class="exercise-card">
+                        <h3>Аудирование</h3>
+                        <p>Прослушайте число и выберите соответствующую цифру.</p>
+                        <a href="listening_game.html" class="exercise-btn">Начать игру</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Попап с дополнительной информацией -->
+            <div id="number-popup" class="number-popup">
+                <div class="popup-content">
+                    <button class="popup-close" onclick="closeNumberPopup()">×</button>
+                    <h3 class="popup-title">Число <span id="popup-number">1</span></h3>
+                    <div class="popup-body">
+                        <div class="number-info">
+                            <h4 id="popup-number-word">One</h4>
+                            <p id="popup-fact">Число 1 обозначает единичность, начало счета.</p>
+                            <p><strong>Примеры использования:</strong></p>
+                            <ul id="popup-examples">
+                                <li>One apple – Одно яблоко</li>
+                                <li>One book – Одна книга</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Футер сайта -->
+    <footer class="footer-kids">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Контакты автора</h3>
+                <p>Если у вас есть вопросы или предложения, свяжитесь со мной:</p>
+            </div>
+            <div class="footer-buttons">
+                <button class="footer-btn" onclick="window.location.href='https://vk.com/panpantori'">VK</button>
+                <button class="footer-btn" onclick="window.location.href='mailto:vikamamonova11037@gmail.com'">Email</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="scroll-to-top">
+        <img src="images/arrow.png" alt="Наверх">
+    </a>
+
+    <script src="numbers.js"></script>
+    <script src="scroll-to-top.js"></script> <script src="email-popup.js"></script></body>
+</html>
+
+

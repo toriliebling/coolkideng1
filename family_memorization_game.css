@@ -1,0 +1,226 @@
+/* Дополнительные стили для страницы игры */
+.game-page {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.game-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.game-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+.game-header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.game-container {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+.game-stats {
+    display: flex;
+    justify-content: space-around;
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.stat {
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+}
+.stat-label {
+    display: block;
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+.stat span:last-child {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3498db;
+}
+.study-area {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: #f0f9ff;
+    border-radius: 15px;
+    border: 3px dashed #1a535c;
+}
+.word-display {
+    font-size: 3rem;
+    color: #1a535c;
+    margin-bottom: 20px;
+    font-weight: bold;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.translation-display {
+    font-size: 2rem;
+    color: #666;
+    margin-bottom: 30px;
+    min-height: 60px;
+}
+.study-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.study-btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+.show-translation-btn {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: white;
+}
+.next-word-btn {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+}
+.start-test-btn {
+    background: linear-gradient(135deg, #2ecc71, #1abc9c);
+    color: white;
+}
+.study-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.test-area {
+    display: none;
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: #fff9e6;
+    border-radius: 15px;
+    border: 3px solid #ffd166;
+}
+.test-question {
+    font-size: 2rem;
+    color: #1a535c;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.test-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 30px 0;
+}
+@media (max-width: 900px) {
+    .test-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .test-options {
+        grid-template-columns: 1fr;
+    }
+}
+.test-option-btn {
+    padding: 25px 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #06d6a0;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 0 #05b38a;
+    border: 3px solid #1a535c;
+}
+.test-option-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 0 #05b38a;
+    background: #09f7bb;
+}
+.test-option-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 0 #05b38a;
+}
+.test-option-btn.correct {
+    background: #2ecc71;
+    box-shadow: 0 6px 0 #27ae60;
+}
+.test-option-btn.wrong {
+    background: #e74c3c;
+    box-shadow: 0 6px 0 #c0392b;
+}
+.test-feedback {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #1a535c;
+}
+.game-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.game-btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+.restart-btn {
+    background: linear-gradient(135deg, #2ecc71, #1abc9c);
+    color: white;
+}
+.back-btn {
+    background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+    color: white;
+}
+.game-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.instructions-box {
+    background: #e8f4fc;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    border-left: 5px solid #3498db;
+}
+.instructions-box h3 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+.instructions-box ul {
+    padding-left: 20px;
+}
+.instructions-box li {
+    margin-bottom: 8px;
+}
+.score-display {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #1a535c;
+}

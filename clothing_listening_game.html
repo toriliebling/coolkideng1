@@ -1,0 +1,118 @@
+﻿﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolK1d - Игра "Аудирование одежды"</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="clothing_style.css">
+    <link rel="stylesheet" href="clothing_listening_game.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header-kids">
+        <div class="container header-content">
+            <!-- Логотип -->
+            <div class="logo-kids">
+                <h1>CoolK1d</h1>
+                <p>Be the top!</p>
+            </div>
+            
+            <!-- Навигационное меню -->
+            <nav class="nav-kids">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#sections" class="nav-link">Разделы</a></li>
+                    <li><a href="#" class="nav-link">Тренировочные задания</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="game-page">
+        <div class="container">
+            <div class="game-header">
+                <h1>Аудирование одежды</h1>
+                <p>Слушайте английские названия предметов одежды и выбирайте правильный перевод на русский язык.</p>
+            </div>
+
+            <div class="game-container">
+                <!-- Статистика игры -->
+                <div class="game-stats">
+                    <div class="stat">
+                        <span class="stat-label">Счёт</span>
+                        <span id="score">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Вопрос</span>
+                        <span id="question-counter">1 / 12</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Время</span>
+                        <span id="timer">00:00</span>
+                    </div>
+                </div>
+
+                <!-- Область вопроса -->
+                <div class="question-area">
+                    <div class="question-text">Прослушайте название предмета одежды:</div>
+                    <div class="audio-controls">
+                        <button id="play-button" class="play-button">▶️</button>
+                    </div>
+                </div>
+
+                <!-- Варианты ответов -->
+                <div id="options-container" class="options-grid">
+                    <!-- Варианты будут сгенерированы JavaScript -->
+                </div>
+
+                <!-- Обратная связь -->
+                <div id="feedback" class="feedback"></div>
+
+                <!-- Управление игрой -->
+                <div class="game-controls">
+                    <button id="next-btn" class="game-btn next-btn" style="display: none;">Следующий вопрос</button>
+                    <button id="restart-btn" class="game-btn restart-btn">Начать заново</button>
+                    <a href="clothing.html" class="game-btn back-btn">Назад к одежде</a>
+                </div>
+
+                <!-- Инструкции -->
+                <div class="instructions-box">
+                    <h3>Как играть:</h3>
+                    <ul>
+                        <li>Нажмите на кнопку ▶️, чтобы прослушать английское название предмета одежды</li>
+                        <li>Выберите правильный перевод на русский язык из предложенных вариантов</li>
+                        <li>За каждый правильный ответ вы получаете 1 балл</li>
+                        <li>Игра состоит из 12 вопросов (по одному на каждый предмет одежды)</li>
+                        <li>Постарайтесь ответить правильно на все вопросы как можно быстрее!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер сайта -->
+    <footer class="footer-kids">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Контакты автора</h3>
+                <p>Если у вас есть вопросы или предложения, свяжитесь со мной:</p>
+            </div>
+            <div class="footer-buttons">
+                <button class="footer-btn" onclick="window.location.href='https://vk.com/panpantori'">VK</button>
+                <button class="footer-btn" onclick="window.location.href='mailto:vikamamonova11037@gmail.com'">Email</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="scroll-to-top">
+        <img src="images/arrow.png" alt="Наверх">
+    </a>
+
+    <script src="clothing_listening_game.js"></script>
+    <script src="scroll-to-top.js"></script>
+</body>
+</html>
+

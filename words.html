@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolK1d - Слова и предложения</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="words_style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header-kids">
+        <div class="container header-content">
+            <!-- Логотип -->
+            <div class="logo-kids">
+                <h1>CoolK1d</h1>
+                <p>Be the top!</p>
+            </div>
+            
+            <!-- Навигационное меню -->
+            <nav class="nav-kids">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#sections" class="nav-link">Разделы</a></li>
+                    <li><a href="#" class="nav-link">Тренировочные задания</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="words-section">
+        <div class="container">
+            <h1 class="words-title">Слова и предложения</h1>
+            <p class="words-subtitle">Выберите раздел для изучения слов и фраз по темам</p>
+            
+            <div class="words-grid">
+                <!-- Карточки разделов -->
+                <a href="everyday.html" class="category-card" data-category="everyday">
+                    <div class="category-icon">🗣️</div>
+                    <h3>Повседневные разговоры</h3>
+                    <p>Основные фразы для общения в бытовых ситуациях</p>
+                </a>
+                
+                <a href="numbers.html" class="category-card" data-category="numbers">
+                    <div class="category-icon">🔢</div>
+                    <h3>Числа от 1 до 10</h3>
+                    <p>Изучаем цифры и счет на английском</p>
+                </a>
+                
+                <a href="colors.html" class="category-card" data-category="colors">
+                    <div class="category-icon">🎨</div>
+                    <h3>Цвета</h3>
+                    <p>Названия цветов и их оттенков</p>
+                </a>
+                
+                <a href="family.html" class="category-card" data-category="family">
+                    <div class="category-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Семья</h3>
+                    <p>Слова, обозначающие членов семьи и родственников</p>
+                </a>
+                
+                <a href="clothing.html" class="category-card" data-category="clothing">
+                    <div class="category-icon">👕</div>
+                    <h3>Одежда</h3>
+                    <p>Слова, связанные с одеждой и аксессуарами</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер сайта -->
+    <footer class="footer-kids">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Контакты автора</h3>
+                <p>Если у вас есть вопросы или предложения, свяжитесь со мной:</p>
+            </div>
+            <div class="footer-buttons">
+                <button class="footer-btn" onclick="window.location.href='https://vk.com/panpantori'">VK</button>
+                <button class="footer-btn" onclick="window.location.href='mailto:vikamamonova11037@gmail.com'">Email</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="scroll-to-top">
+        <img src="images/arrow.png" alt="Наверх">
+    </a>
+
+    <script src="scroll-to-top.js"></script>
+    <script src="email-popup.js"></script>
+</body>
+</html>

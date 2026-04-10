@@ -1,0 +1,395 @@
+/* Дополнительные стили для страницы sounds.html */
+
+.alphabet-section {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+    position: relative;
+}
+
+.alphabet-title {
+    text-align: center;
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 #ffd166;
+    -webkit-text-stroke:0;
+}
+
+.alphabet-subtitle {
+    text-align: center;
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alphabet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.letter-btn {
+    width: 100%;
+    aspect-ratio: 1;
+    background: #ff6b6b;
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 0 #d32f2f;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 0 #d32f2f;
+    background: #ff8e8e;
+}
+
+.letter-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 0 #d32f2f;
+}
+
+.letter-btn.vowel {
+    background: #06d6a0;
+    box-shadow: 0 6px 0 #05b38a;
+}
+
+.letter-btn.vowel:hover {
+    background: #09f7bb;
+    box-shadow: 0 10px 0 #05b38a;
+}
+
+.letter-btn.consonant {
+    background: #6a11cb;
+    box-shadow: 0 6px 0 #4d0b9c;
+}
+
+.letter-btn.consonant:hover {
+    background: #7d1fe0;
+    box-shadow: 0 10px 0 #4d0b9c;
+}
+
+.instructions {
+    text-align: center;
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Стили для раздела звуков */
+.sounds-section {
+    margin-top: 60px;
+    padding: 30px 0;
+    background: linear-gradient(135deg, #fff9e6 0%, #ffe6e6 100%);
+    border-radius: 20px;
+    border: none;
+}
+
+.sounds-title {
+    text-align: center;
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0 #ffd166;
+}
+
+.sounds-subtitle {
+    text-align: center;
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sounds-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sound-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sound-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sound-symbol {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1a535c;
+    margin-bottom: 10px;
+    font-family: "Jost", sans-serif;
+}
+
+.sound-type {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: "Jost", sans-serif;
+}
+
+.sound-type.vowel {
+    background: #06d6a0;
+    color: white;
+}
+
+.sound-type.consonant {
+    background: #6a11cb;
+    color: white;
+}
+
+.sound-example {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    font-family: "Jost", sans-serif;
+}
+
+.sound-transcription {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    font-family: "Jost", sans-serif;
+}
+
+.sound-translation {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.sound-buttons {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.sound-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    flex: 1;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.sound-btn.play-sound {
+    background: #ff6b6b;
+    color: white;
+    box-shadow: 0 4px 0 #d32f2f;
+}
+
+.sound-btn.play-sound:hover {
+    background: #ff8e8e;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 0 #d32f2f;
+}
+
+.sound-btn.play-word {
+    background: #4ecdc4;
+    color: white;
+    box-shadow: 0 4px 0 #2a8c85;
+}
+
+.sound-btn.play-word:hover {
+    background: #6ae0d7;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 0 #2a8c85;
+}
+
+.sound-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 0;
+}
+
+/* Стили для попапа с животным */
+.animal-popup {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.popup-content {
+    background: linear-gradient(135deg, #ffd166, #ff9e6d);
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 200px;
+    width: auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: none;
+    position: relative;
+    font-family: "Jost", sans-serif;
+    color: #1a535c;
+    pointer-events: auto;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    line-height: 1;
+    padding: 0;
+}
+
+.popup-close:hover {
+    background: #d32f2f;
+    transform: scale(1.1);
+}
+
+.popup-title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #1a535c;
+    text-shadow: 1px 1px 0 #ffd166;
+    padding-right: 35px;
+}
+
+.popup-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.animal-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.animal-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #1a535c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.animal-info {
+    text-align: center;
+}
+
+.animal-info h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #1a535c;
+}
+
+.animal-info p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .popup-content {
+        padding: 8px;
+        max-width: 160px;
+    }
+    .animal-image img {
+        width: 70px;
+        height: 70px;
+    }
+    .popup-title {
+        font-size: 16px;
+        padding-right: 25px;
+    }
+    .animal-info h4 {
+        font-size: 14px;
+    }
+    .animal-info p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 768px) {
+    .alphabet-grid {
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+        gap: 10px;
+    }
+    
+    .letter-btn {
+        font-size: 28px;
+    }
+}

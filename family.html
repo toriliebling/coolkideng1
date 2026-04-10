@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CoolK1d - Семья</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="family_style.css">
+
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+
+    <header class="header-kids">
+
+        <div class="container header-content">
+
+            <!-- Логотип -->
+
+            <div class="logo-kids">
+
+                <h1>CoolK1d</h1>
+
+                <p>Be the top!</p>
+
+            </div>
+
+            
+
+            <!-- Навигационное меню -->
+
+            <nav class="nav-kids" id="nav-kids-id" style="display: block; opacity: 1; transform: translateY(0px); transition: opacity 0.5s ease 0s, transform 0.5s ease 0s; visibility: visible; position: relative; top: 0px; left: 0px; width: auto; height: auto; margin: 0px; padding: 0px; border: 0px; background: transparent; color: inherit; font-size: inherit; font-family: inherit; font-weight: inherit; text-align: inherit; text-decoration: none; cursor: default; pointer-events: auto; user-select: auto; z-index: auto; box-sizing: border-box; overflow: visible; clip: auto; -webkit-appearance: none; -moz-appearance: none; appearance: none; resize: none; vertical-align: baseline; white-space: normal; word-spacing: normal; letter-spacing: normal; text-transform: none; direction: ltr; line-height: normal; writing-mode: horizontal-tb; text-orientation: mixed; text-rendering: auto; image-rendering: auto; shape-rendering: auto; color-interpolation: auto; color-interpolation-filters: auto; color-rendering: auto; fill: auto; stroke: auto; paint-order: normal; vector-effect: none; position: relative; top: 0px; left: 0px; width: auto; height: auto; margin: 0px; padding: 0px; border: 0px; background: transparent; color: inherit; font-size: inherit; font-family: inherit; font-weight: inherit; text-align: inherit; text-decoration: none; cursor: default; pointer-events: auto; user-select: auto; z-index: auto; box-sizing: border-box; overflow: visible; clip: auto; -webkit-appearance: none; -moz-appearance: none; appearance: none; resize: none; vertical-align: baseline; white-space: normal; word-spacing: normal; letter-spacing: normal; text-transform: none; direction: ltr; line-height: normal; writing-mode: horizontal-tb; text-orientation: mixed; text-rendering: auto; image-rendering: auto; shape-rendering: auto; color-interpolation: auto; color-interpolation-filters: auto; color-rendering: auto; fill: auto; stroke: auto; paint-order: normal; vector-effect: none; position: relative; top: 0px; left: 0px; width: auto; height: auto; margin: 0px; padding: 0px; border: 0px; background: transparent; color: inherit; font-size: inherit; font-family: inherit; font-weight: inherit; text-align: inherit; text-decoration: none; cursor: default; pointer-events: auto; user-select: auto; z-index: auto; box-sizing: border-box; overflow: visible; clip: auto; -webkit-appearance: none; -moz-appearance: none; appearance: none; resize: none; vertical-align: baseline; white-space: normal; word-spacing: normal; letter-spacing: normal; text-transform: none; direction: ltr; line-height: normal; writing-mode: horizontal-tb; text-orientation: mixed; text-rendering: auto; image-rendering: auto; shape-rendering: auto; color-interpolation: auto; color-interpolation-filters: auto; color-rendering: auto; fill: auto; stroke: auto; paint-order: normal; vector-effect: none;">
+
+                <ul>
+
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+
+                    <li><a href="index.html#sections" class="nav-link">Разделы</a></li>
+
+                    <li><a href="#" class="nav-link">Тренировочные задания</a></li>                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Основной контент -->
+
+    <main class="family-section">
+
+        <div class="container">
+
+            <h1 class="family-title">Семья</h1>
+
+            <p class="family-subtitle">Слова, обозначающие членов семьи и родственников. Нажмите на кнопку 🔊 чтобы услышать произношение.</p>
+
+            
+
+            <!-- Сетка слов -->
+
+            <div class="family-grid">
+
+                <div class="word-card" data-word="mother">
+                    <h3 class="word-english">Mother</h3>
+                    <p class="word-translation">Мама</p>
+                    <button class="word-btn play-sound" onclick="playWordSound('mother')">🔊 Произношение</button>
+                </div>
+                <div class="word-card" data-word="father">
+
+                    <h3 class="word-english">Father</h3>
+
+                    <p class="word-translation">Папа</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('father')">🔊 Произношение</button>
+
+                </div>
+
+                <div class="word-card" data-word="sister">
+
+                    <h3 class="word-english">Sister</h3>
+
+                    <p class="word-translation">Сестра</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('sister')">🔊 Произношение</button>
+
+                </div>
+
+                <div class="word-card" data-word="brother">
+
+                    <h3 class="word-english">Brother</h3>
+
+                    <p class="word-translation">Брат</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('brother')">🔊 Произношение</button>
+
+                </div>
+
+                <div class="word-card" data-word="grandmother">
+
+                    <h3 class="word-english">Grandmother</h3>
+
+                    <p class="word-translation">Бабушка</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('grandmother')">🔊 Произношение</button>
+
+                </div>
+
+                <div class="word-card" data-word="grandfather">
+
+                    <h3 class="word-english">Grandfather</h3>
+
+                    <p class="word-translation">Дедушка</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('grandfather')">🔊 Произношение</button>
+
+                </div>
+
+                <div class="word-card" data-word="aunt">
+
+                    <h3 class="word-english">Aunt</h3>
+
+                    <p class="word-translation">Тётя</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('aunt')">🔊 Произношение</button>
+
+                </div>
+
+                <div class="word-card" data-word="uncle">
+
+                    <h3 class="word-english">Uncle</h3>
+
+                    <p class="word-translation">Дядя</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('uncle')">🔊 Произношение</button>
+
+                </div>
+
+                <div class="word-card" data-word="cousin">
+
+                    <h3 class="word-english">Cousin</h3>
+
+                    <p class="word-translation">Двоюродный брат/сестра</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('cousin')">🔊 Произношение</button>
+
+                </div>
+
+                <div class="word-card" data-word="son">
+
+                    <h3 class="word-english">Son</h3>
+
+                    <p class="word-translation">Сын</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('son')">🔊 Произношение</button>
+
+                </div>
+
+                <div class="word-card" data-word="daughter">
+
+                    <h3 class="word-english">Daughter</h3>
+
+                    <p class="word-translation">Дочь</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('daughter')">🔊 Произношение</button>
+
+                </div>
+
+                <div class="word-card" data-word="family">
+
+                    <h3 class="word-english">Family</h3>
+
+                    <p class="word-translation">Семья</p>
+
+                    <button class="word-btn play-sound" onclick="playWordSound('family')">🔊 Произношение</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="instructions">
+
+                <p>1. Нажмите на кнопку 🔊 под словом, чтобы услышать произношение на английском</p>
+
+                <p>2. Повторите слово вслух, стараясь имитировать произношение</p>
+
+                <p>3. Запомните написание слова и его перевод</p>
+
+                <p>4. Попробуйте выполнить задания ниже для закрепления</p>
+
+            </div>
+
+
+
+            <!-- Задания -->
+
+            <div class="exercises-section">
+
+                <h2 class="exercises-title">Тренировочные задания</h2>
+
+                <p class="exercises-subtitle">Проверьте свои знания с помощью интерактивных заданий.</p>
+
+                
+
+                <div class="exercises-grid">
+
+                    <div class="exercise-card">
+
+                        <h3>Сопоставление</h3>
+
+                        <p>Сопоставьте слово на английском с его переводом.</p>
+
+                        <a href="family_matching_game.html" class="exercise-btn">Начать игру</a>
+
+                    </div>
+
+                    <div class="exercise-card">
+
+                        <h3>Аудирование</h3>
+
+                        <p>Прослушайте слово и выберите правильный перевод.</p>
+
+                        <a href="family_listening_game.html" class="exercise-btn">Начать игру</a>
+
+                    </div>
+
+                    <div class="exercise-card">
+
+                        <h3>Запоминание</h3>
+
+                        <p>Проверьте, насколько хорошо вы запомнили слова.</p>
+
+                        <a href="family_memorization_game.html" class="exercise-btn">Начать игру</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- Футер сайта -->
+
+    <footer class="footer-kids">
+
+        <div class="container footer-content">
+
+            <div class="footer-info">
+
+                <h3>Контакты автора</h3>
+
+                <p>Если у вас есть вопросы или предложения, свяжитесь со мной:</p>
+
+            </div>
+
+            <div class="footer-buttons">
+
+                <button class="footer-btn" onclick="window.location.href='https://vk.com/panpantori'">VK</button>
+
+                <button class="footer-btn" onclick="window.location.href='mailto:vikamamonova11037@gmail.com'">Email</button>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Кнопка "Наверх" -->
+
+    <a href="#" class="scroll-to-top">
+
+        <img src="images/arrow.png" alt="Наверх">
+
+    </a>
+
+
+
+    <script src="family.js"></script>
+
+    <script src="scroll-to-top.js"></script> <script src="email-popup.js"></script></body>
+
+</html>
+
